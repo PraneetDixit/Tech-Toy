@@ -1,3 +1,16 @@
+document.body.onload = function(){
+    if(window.devicePixelRatio> 1){
+        document.body.classList.add("mob");
+        document.getElementById("attribution").innerHTML = `
+                                                                <span>Balancing Doll</span> by 
+                                                                <a href="https://praneetdixit.me">
+                                                                    Praneet Dixit
+                                                                </a> <br> 
+                                                                Click anywhere on the screen to make the doll dance
+                                                            `;
+    }
+}
+
 let angles = document.getElementsByClassName("ind");
 let measures = [-35, -17.5, 0, 17.5, 35];
 let expanation;
@@ -6,12 +19,12 @@ document.getElementById("togButton").addEventListener("click", function(e){
     if(e.target.checked){
         document.getElementById("doll").style.backgroundImage = "url('Img/ObjectEx2.png')";
         document.getElementById("rules").style.display = "flex";
-        document.getElementById("action").style.paddingTop = "25rem";
+        document.getElementById("action").style.paddingTop = window.devicePixelRatio>1 ? "50rem" : "25rem";
         expanation = true;
     }else{
         document.getElementById("doll").style.backgroundImage = "url('Img/Object.png')";
         document.getElementById("rules").style.display = "none";
-        document.getElementById("action").style.paddingTop = "40rem";
+        document.getElementById("action").style.paddingTop = window.devicePixelRatio>1 ? "60rem" : "30rem";
         expanation = false;
     }
 })
@@ -35,7 +48,7 @@ for(let i = 4; i>-1; i--){
             setTimeout(function(){
                 document.getElementById("toRotate").style.transform = `rotate(0deg)`;
                 document.getElementById("doll").style.backgroundImage = `url('Img/ObjectEx2.png')`;
-            },3000);
+            },4000);
         }
     });
 }
