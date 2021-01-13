@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tech-Toy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="attribution">
+        <span>Balancing Doll</span> by <a href="https://praneetdixit.me">Praneet Dixit</a> - 
+        Click anywhere on the screen to make the doll dance
+    </div>
+    <div id="cont">
+        <div id="action">
+            <div id="toRotate">
+                <div id="doll"></div>
+            </div>
+        </div>
+    </div>
+    <div id="control">
+        <div class="ind fi" value="-35"></div>
+        <div class="ind" value="-17.5"></div>
+        <div class="ind" value="0"></div>
+        <div class="ind" value="17"></div>
+        <div class="ind fi" value="35"></div>
+    </div>
+    <div id="tog">
+        <div>
+        Toy view
+        <label class="switch">
+            <input type="checkbox" id="togButton">
+            <span class="slider"></span>
+        </label>
+        Explanation view
+        </div>
+        <div id="rules">
+            <div class="rGroup">
+                <img src="Img/arrow.png" alt="Arrow">
+                <span>Direction of Moment</span>
+            </div>
+            <div class="rGroup">
+                <img src="Img/pivit.png" alt="Pivot">
+                <span>Pivot</span>
+            </div>
+            <div class="rGroup">
+                <img src="Img/cross.png" alt="Point">
+                <span>Center of mass</span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
