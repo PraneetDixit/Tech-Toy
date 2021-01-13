@@ -165,3 +165,66 @@ input:checked + .slider:before {
 #attribution span{
     font-weight: bold;
 }
+
+.mob #attribution{
+    font-size: 3rem;
+    padding: 1.5rem;
+}
+
+.mob #tog{
+    font-size: 3rem;
+    padding: 1.5rem;
+}
+
+.mob .switch{
+    height: 3.5rem;
+    width: 6rem;
+    top: 0.5rem;
+}
+
+.mob .slider:before{
+    height: 2.5rem;
+    width: 2.5rem;
+    bottom: 0.5rem;
+    left: 0.5rem;
+}
+
+.mob input:checked + .slider:before {
+  transform: translateX(2.3rem);
+}
+
+.mob #rules{
+    flex-direction: column;
+}
+
+.mob .rGroup{
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+}
+
+.mob .rGroup span{
+    flex-grow: 0;
+}
+
+.mob{
+    background-size: contain;
+}
+
+.mob #action{
+    width: 80%;
+    padding-top: 60rem;
+}
+
+.mob #toRotate{
+    height: 1800px;
+    width: 450px;
+    transition: transform 0.75s;
+}
+
+.mob #doll{
+    height: 900px;
+}
+
+.mob .ind{
+    width: 20vw;
+}
