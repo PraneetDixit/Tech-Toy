@@ -41,6 +41,7 @@ for(let i = 4; i>-1; i--){
             if(i !== 2){
                 squeez.play();
             }
+            document.getElementById("doll").style.backgroundImage = `url('Img/Object.png')`;
             document.getElementById("toRotate").style.transform = `rotate(${measures[i]}deg)`;
             setTimeout(function(){
                 document.getElementById("toRotate").style.transform = `rotate(0deg)`;
