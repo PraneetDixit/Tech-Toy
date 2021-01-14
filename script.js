@@ -20,11 +20,15 @@ document.getElementById("togButton").addEventListener("click", function(e){
         document.getElementById("doll").style.backgroundImage = "url('Img/ObjectEx2.png')";
         document.getElementById("rules").style.display = "flex";
         document.getElementById("action").style.paddingTop = window.devicePixelRatio>1 ? "50rem" : "25rem";
+        document.getElementsByTagName("button")[0].style.display = "inline";
+        document.getElementsByTagName("button")[1].style.display = "inline";
         expanation = true;
     }else{
         document.getElementById("doll").style.backgroundImage = "url('Img/Object.png')";
         document.getElementById("rules").style.display = "none";
         document.getElementById("action").style.paddingTop = window.devicePixelRatio>1 ? "60rem" : "30rem";
+        document.getElementsByTagName("button")[0].style.display = "none";
+        document.getElementsByTagName("button")[1].style.display = "none";
         expanation = false;
     }
 })
